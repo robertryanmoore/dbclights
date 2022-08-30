@@ -1,20 +1,32 @@
 <!doctype html>
-<style>
-body {
-  background-color: grey;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  cursor: default ;
-}
-</style>
-
-<title>DBC Lights</title>
-<button button type="button" id = "red"> <a href="/red">RED</a> </button>  </BR></BR>
-<button button type="button"> <a href="/blue">BLUE</a> </button>  </BR></BR>
-<button button type="button"> <a href="/yelllow">YELLOW</a> </button>  </BR></BR>
-<button button type="button"> <a href="/green">GREEN</a> </button>  </BR></BR>
-<button button type="button"> <a href="/purple">PURPLE</a> </button>  </BR></BR>
-<button button type="button"> <a href="/ashypurple">ASHY PURPLE</a> </button>  </BR></BR>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>DBC Lights</title>
+  <link rel="icon" type="images\png" href="{{ url_for('static', filename='images/sound.png') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+  <button button type="button" class = "stage"> <a href="/red">RED</a> </button>
+  <button button type="button" class = "stage"> <a href="/blue">BLUE</a> </button>
+  <button button type="button" class = "stage"> <a href="/yellow">YELLOW</a> </button>
+  <button button type="button" class = "stage"> <a href="/green">GREEN</a> </button>
+  <button button type="button" class = "stage"> <a href="/purple">PURPLE</a> </button>
+  <button button type="button" class = "stage"> <a href="/ashypurple">ASHY PURPLE</a>
+  <button button type="button" class = "stage"> <a href="/orange">ORANGE</a> </button>
+  <button button type="button" class = "stage"> <a href="/white">WHITE</a> </button>
+  
+  <hr>
+  <button button type="button" class = "sides"> <a href="/white">W 0</a> </button>
+  <button button type="button" class = "sides"> <a href="/white">W 25</a> </button>
+  <button button type="button" class = "sides"> <a href="/white">W 50</a> </button>
+  <button button type="button" class = "sides"> <a href="/white">W 75</a> </button> 
+  <button button type="button" class = "sides"> <a href="/white">W 100</a> </button>
+  <br>
+  <button button type="button" class = "sides"> <a href="/white">C 0</a> </button>
+  <button button type="button" class = "sides"> <a href="/white">C 25</a> </button>
+  <button button type="button" class = "sides"> <a href="/white">C 50</a> </button>  
+  <button button type="button" class = "sides"> <a href="/white">C 75</a> </button>  
+  <button button type="button" class = "sides"> <a href="/white">C 100</a> </button>
+  <br>
+  <button button type="button" class = "sides"> <a href="/white">KILL</a> </button>  
+</body>

@@ -1,32 +1,43 @@
 <!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function f1(objButton){  
+  var url = "/" + objButton.value.toLowerCase().replace(" ","");
+  $.get(url);
+}
+</script>
 <head>
   <title>DBC Lights</title>
   <link rel="icon" type="images\png" href="{{ url_for('static', filename='images/sound.png') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-  <button button type="button" class = "stage"> <a href="/red">RED</a> </button>
-  <button button type="button" class = "stage"> <a href="/blue">BLUE</a> </button>
-  <button button type="button" class = "stage"> <a href="/yellow">YELLOW</a> </button>
-  <button button type="button" class = "stage"> <a href="/green">GREEN</a> </button>
-  <button button type="button" class = "stage"> <a href="/purple">PURPLE</a> </button>
-  <button button type="button" class = "stage"> <a href="/ashypurple">ASHY PURPLE</a>
-  <button button type="button" class = "stage"> <a href="/orange">ORANGE</a> </button>
-  <button button type="button" class = "stage"> <a href="/white">WHITE</a> </button>
+  <input type='button' class = "stage" value='RED' onclick='f1(this)' />
+  <input type='button' class = "stage" value='BLUE' onclick='f1(this)' />
+  <input type='button' class = "stage" value='YELLOW' onclick='f1(this)' />
+  <input type='button' class = "stage" value='GREEN' onclick='f1(this)' />
+  <input type='button' class = "stage" value='PURPLE' onclick='f1(this)' />
+  <input type='button' class = "stage" value='ASHY PURPLE' onclick='f1(this)' />
+  <input type='button' class = "stage" value='ORANGE' onclick='f1(this)' />
+  <input type='button' class = "stage" value='WHITE' onclick='f1(this)' />
   
   <hr>
-  <button button type="button" class = "sides"> <a href="/white">W 0</a> </button>
-  <button button type="button" class = "sides"> <a href="/white">W 25</a> </button>
-  <button button type="button" class = "sides"> <a href="/white">W 50</a> </button>
-  <button button type="button" class = "sides"> <a href="/white">W 75</a> </button> 
-  <button button type="button" class = "sides"> <a href="/white">W 100</a> </button>
+  
+  <input type='button' class = "sides" value='W 0' onclick='f1(this)' />
+  <input type='button' class = "sides" value='W 25' onclick='f1(this)' />
+  <input type='button' class = "sides" value='W 50' onclick='f1(this)' />
+  <input type='button' class = "sides" value='W 75' onclick='f1(this)' />
+  <input type='button' class = "sides" value='W 100' onclick='f1(this)' />
   <br>
-  <button button type="button" class = "sides"> <a href="/white">C 0</a> </button>
-  <button button type="button" class = "sides"> <a href="/white">C 25</a> </button>
-  <button button type="button" class = "sides"> <a href="/white">C 50</a> </button>  
-  <button button type="button" class = "sides"> <a href="/white">C 75</a> </button>  
-  <button button type="button" class = "sides"> <a href="/white">C 100</a> </button>
+  <input type='button' class = "sides" value='C 0' onclick='f1(this)' />
+  <input type='button' class = "sides" value='C 25' onclick='f1(this)' />
+  <input type='button' class = "sides" value='C 50' onclick='f1(this)' />  
+  <input type='button' class = "sides" value='C 75' onclick='f1(this)' />  
+  <input type='button' class = "sides" value='C 100' onclick='f1(this)' />
   <br>
-  <button button type="button" class = "sides"> <a href="/white">KILL</a> </button>  
+  <input type='button' class = "sides" value='KILL' onclick='f1(this)' />  
 </body>

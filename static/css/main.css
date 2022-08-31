@@ -29,3 +29,10 @@ hr{
     border: 0;
     border-top: 1px solid black;
 }
+input {
+    width: 115px;
+    margin: 2px;
+  }
+input:hover {
+    background-color: beige;
+  }

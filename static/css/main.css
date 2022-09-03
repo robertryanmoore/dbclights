@@ -11,13 +11,6 @@ body {
 .sides{
     background-color: turquoise;
 }
-button {
-    width: 115px;
-    margin: 2px;
-  }
-button:hover {
-    background-color: beige;
-  }
 a {
     color: black;
     text-decoration: none;
@@ -30,7 +23,7 @@ hr{
     border-top: 1px solid black;
 }
 input {
-    width: 115px;
+    width: 160px;
     margin: 2px;
   }
 input:hover {
